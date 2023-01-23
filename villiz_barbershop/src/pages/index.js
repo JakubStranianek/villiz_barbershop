@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar/Navbar"
 import HeroSection from "../components/Hero/HeroSection"
 import AboutUs from "../components/AboutUs/AboutUs"
 import Gallery from "../components/Gallery/Gallery"
+import AboutUs2 from "../components/AboutUs/AboutUs2"
+import OurTeam from "../components/OurTeam/OurTeam"
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <HeroSection/> 
       <AboutUs /> 
       <Gallery />
+      <AboutUs2 />
+      <OurTeam />
     </div>
   )
 }

@@ -14,18 +14,22 @@ const files = [
   
   export default function Example() {
     return (
-      <ul role="list" className="grid grid-cols-2 gap-x-9 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 xl:justify-between">
-        {files.map((file) => (
-          <li key={file.source} className="relative">
-            <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-[#BFAEA8] focus-within:ring-offset-2 focus-within:ring-offset-gray-100">
-              <img src={file.source} alt="" className="pointer-events-none object-cover group-hover:opacity-75" />
-              <button type="button" className="absolute inset-0 focus:outline-none">
-                <span className="sr-only">View details for {file.title}</span>
-              </button>
+       <div className="bg-gray-50">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+          {files.map((photo) => (
+            <div key={photo.id} className="group relative">
+              <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
+                <img
+                  src={photo.source}
+                  alt={photo.id + photo.source}
+                  className="h-full w-full focus:outline-[#BFAEA8] object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>             
             </div>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
+    </div>
     )
   }
-  

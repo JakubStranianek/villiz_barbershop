@@ -18,7 +18,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-[#BFAEA8]">
+    <Disclosure as="nav" className="bg-gray-50">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -38,12 +38,12 @@ export default function Example() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="logo.png"
+                    src="logoB.png"
                     alt="Villiz Barbershop"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="logo.png"
+                    src="logoB.png"
                     alt="Villiz Barbershop"
                   />
                 </div>
@@ -54,7 +54,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-[#024059] text-white' : 'text-white hover:bg-[#024059] hover:bg-opacity-70 hover:text-white',
+                          item.current ? 'bg-[#024059] text-white' : 'text-#024059 hover:bg-[#024059] hover:bg-opacity-70 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
