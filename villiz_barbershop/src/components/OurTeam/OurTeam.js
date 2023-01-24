@@ -9,6 +9,14 @@ const people = [
       instaUrl: 'https://www.instagram.com/villiz_barber',
       phoneNumber: '+421918778993',
     },
+    {
+      name: 'Barber wanted',
+      role: 'Chceš to byť práve ty? 🫵🏽',
+      imageUrl:
+        'barber-wanted.jpg',
+      instaUrl: 'https://www.instagram.com/villiz_barber',
+      phoneNumber: '+421918778993',
+    }
  
   ]
   
@@ -25,7 +33,7 @@ const people = [
             </div>
             <ul
               role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-2 lg:gap-x-8"
             >
               {people.map((person) => (
                 <li key={person.name}>

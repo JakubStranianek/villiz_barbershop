@@ -16,6 +16,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-gray-50">
@@ -54,7 +55,7 @@ export default function Example() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current ? 'bg-[#024059] text-white' : 'text-#024059 hover:bg-[#024059] hover:bg-opacity-70 hover:text-white',
+                          item.current ? 'bg-myTeal text-white' : 'text-#024059 hover:bg-myTeal hover:bg-opacity-70 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
