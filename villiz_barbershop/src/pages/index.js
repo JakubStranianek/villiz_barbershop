@@ -6,6 +6,7 @@ import Gallery from "../components/Gallery/Gallery"
 import AboutUs2 from "../components/AboutUs/AboutUs2"
 import OurTeam from "../components/OurTeam/OurTeam"
 import Reviews from "../components/Reviews/Reviews"
+import Contact from "../components/Contact/Contact"
 import Footer from "../components/Footer/Footer"
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutUs2 />
       <OurTeam />
       <Reviews />
+      <Contact />
       <Footer />
     </div>
   )

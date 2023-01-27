@@ -4,55 +4,55 @@ import { useState, useEffect } from "react"
 const data = [
     {
         id: 1,
-        src: "guy1.jpg",
+        src: "guy1.png",
         review: "Vždy spokojný po návšteve tohto barbershopu. Príjemné prostredie, kvalitný barber, cena služieb zodpovedá kvalite. Plne každému odporúčam. Barber Vilo si dá vždy záležať.",
         name: "Martin"
     },
     {
         id: 2,
-        src: "guy2.jpg",
+        src: "guy2.png",
         review: "Čo sa týka Viliho v Žiline tak odporúčam 👌 Šikovný chalan vie sa s tým pekne vyhrať. Spokojnosť 100% plus príjemné prostredie.",
         name: "Dávid"
     },
     {
         id: 3,
-        src: "guy3.jpg",
+        src: "guy3.png",
         review: "Vždy spokojosť so strihom ale aj čo sa týka prostredia. Villiz Barber komunikatívny a vždy vykúzli účes ktorý spĺňa všetky moje kritéria, za mňa najlepšia voľba v ZA.",
         name: "Daniel"
     },
     {
         id: 4,
-        src: "guy4.jpg",
+        src: "guy4.png",
         review: "Barber Villiz má perfektný prístup. Vždy mi urobí skvelý strih. Je to štýlový barbershop. TOPka v Žiline. Odporúčam.",
         name: "Miro"
     },
     {
         id: 5,
-        src: "guy5.jpg",
+        src: "guy5.png",
         review: "Barber Villiz má perfektný prístup. Vždy mi urobí skvelý strih. Je to štýlový barbershop. TOPka v Žiline. Odporúčam.",
         name: "Michal"
     },
     {
         id: 6,
-        src: "guy6.jpg",
+        src: "guy6.png",
         review: "Dlho som nevedel nájsť barbera, ktorý by vyhovoval mojej náročnosti, no Villiz spĺňa všetko na špičkovej úrovni. Od priateľského a pohodového prístupu k zákaznikovi až po precízne vypiplaný strih. Venuje sa klientovi v maximálnej možnej miere a dá si záležať aj na tých najmenších detailoch. Môžem len a len odporúčiť aj ostatným.",
         name: "Roman"
     },
     {
         id: 7,
-        src: "guy7.jpg",
+        src: "guy7.png",
         review: "Top služby. Originálne a hlavne príjemné prostredie. Robota vždy na 100%, žiadne odfláknutie. Ochotný a kamarátsky prístup. Vždy odchádzam spokojný 👍☝️👏 Odporúčam !!",
         name: "Martin"
     },
     {
         id: 8,
-        src: "guy8.jpg",
+        src: "guy8.png",
         review: "Vždy maximálna spokojnosť. Každý jeden strih je niečím jedinečný. Výborná komunikácia a veľmi príjemné prostredia. 10/10",
         name: "Jakub"
     },
     {
         id: 9,
-        src: "guy9.jpg",
+        src: "guy9.png",
         review: "Moderné prostredie kde sa vždy cítim pohodlne. Výborna priateľská nálada a ešte lepšie služby. Vrelo odporúčam!!",
         name: "Lukáš"
     },

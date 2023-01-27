@@ -12,7 +12,8 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        "myTeal": "#024059"
+        "myTeal": "#024059",
+        "myCamel": "#BFAEA8",
       }
     },
   },
