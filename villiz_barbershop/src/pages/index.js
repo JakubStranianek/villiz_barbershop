@@ -1,26 +1,25 @@
 import * as React from "react"
-import Navbar from "../components/Navbar/Navbar"
 import HeroSection from "../components/Hero/HeroSection"
 import AboutUs from "../components/AboutUs/AboutUs"
 import Gallery from "../components/Gallery/Gallery"
 import AboutUs2 from "../components/AboutUs/AboutUs2"
 import OurTeam from "../components/OurTeam/OurTeam"
+import PriceList from "../components/PriceList/PriceList"
 import Reviews from "../components/Reviews/Reviews"
-import Contact from "../components/Contact/Contact"
-import Footer from "../components/Footer/Footer"
+import Layout from "../components/Layout"
 
 export default function Home() {
   return (
-    <div>
-      <Navbar/>  
-      <HeroSection/> 
-      <AboutUs /> 
+
+
+    <Layout>
+      <HeroSection />
+      <AboutUs />
       <Gallery />
       <AboutUs2 />
       <OurTeam />
+      <PriceList />
       <Reviews />
-      <Contact />
-      <Footer />
-    </div>
+    </Layout>
   )
 }

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useRef } from "react"
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -18,6 +19,12 @@ function classNames(...classes) {
 
 
 export default function Example() {
+  const targetRef = useRef(null);
+
+  function handleClick() {
+    targetRef.current.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <Disclosure as="nav" className="bg-gray-50">
       {({ open }) => (
@@ -54,6 +61,7 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={handleClick}
                         className={classNames(
                           item.current ? 'bg-myTeal text-white' : 'text-#024059 hover:bg-myTeal hover:bg-opacity-70 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'

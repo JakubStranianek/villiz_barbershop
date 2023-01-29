@@ -3,7 +3,7 @@ import { EnvelopeIcon, PhoneIcon, HomeIcon } from '@heroicons/react/24/outline'
 
 export default function Example() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl py-16 px-6 lg:px-8">
         <div className="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
           <div>
