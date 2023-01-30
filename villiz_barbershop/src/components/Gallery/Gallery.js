@@ -1,4 +1,6 @@
 import * as React from "react"
+import { useState } from "react";
+import ModalImage from "../ModalImage/ModalImage"
 
 const files = [
     {
@@ -13,6 +15,8 @@ const files = [
   ]
   
   export default function Example() {
+    const [modal, setModal] = useState(false);
+
     return (
        <div className="bg-gray-50">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -24,12 +28,17 @@ const files = [
                   src={photo.source}
                   alt={photo.id + photo.source}
                   className="h-full w-full focus:outline-[#BFAEA8] object-cover object-center lg:h-full lg:w-full"
+                  onClick={() => setModal(!modal)}
                 />
               </div>             
             </div>
           ))}
         </div>
       </div>
+
+      {modal && (
+        <ModalImage /> 
+      )}
     </div>
     )
   }
