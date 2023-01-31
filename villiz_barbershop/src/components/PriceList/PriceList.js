@@ -1,5 +1,8 @@
 import * as React from "react"
-import { useRef } from "react";
+import {motion, useAnimation} from "framer-motion"
+import { useInView } from "framer-motion"
+import { useRef, useEffect } from "react"
+
 const features = [
   { name: '💈 Junior', description: 'Strih nožničkami a strojčekom pre deti do 15 rokov', price: "15€" },
   { name: '💈 Basic', description: 'Uprava brady', price: "15€" },
@@ -9,16 +12,35 @@ const features = [
 ]
 
 export default function Example() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      animation.start({
+        y: 0, opacity: 1,
+        transition: {
+          type: "spring", duration: 1.5
+        }
+      })
+    } else {
+      animation.start({
+        y: '-1000', opacity: 0 
+      })
+    }
+  }, [isInView])
+
   return (
     <div className="bg-gray-50">
-      <div aria-hidden="true" className="relative">
+      <motion.div aria-hidden="true" className="relative" ref={ref} animate={animation}>
         <img
           src="priceList-bg.png"
           alt=""
           className="h-96 w-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-white" />
-      </div>
+      </motion.div>
 
       <div className="relative mx-auto -mt-12 max-w-7xl px-4 pb-16 sm:px-6 sm:pb-24 lg:px-8">
         <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">

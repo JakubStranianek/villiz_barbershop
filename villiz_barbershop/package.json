@@ -19,7 +19,8 @@
     "framer-motion": "^8.5.5",
     "gatsby": "^5.4.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.1"
   },
   "repository": {
     "type": "git",

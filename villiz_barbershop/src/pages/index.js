@@ -7,19 +7,22 @@ import OurTeam from "../components/OurTeam/OurTeam"
 import PriceList from "../components/PriceList/PriceList"
 import Reviews from "../components/Reviews/Reviews"
 import Layout from "../components/Layout"
+import SplashScreen from "../components/SplashScreen/SplashScreen"
 
 export default function Home() {
   return (
-
-
-    <Layout>
-      <HeroSection />
-      <AboutUs />
-      <Gallery />
-      <AboutUs2 />
-      <OurTeam />
-      <PriceList />
-      <Reviews />
-    </Layout>
+    <>
+      <SplashScreen />
+      
+      <Layout>
+        <HeroSection />
+        <AboutUs />
+        <Gallery />
+        <AboutUs2 />
+        <OurTeam />
+        <PriceList />
+        <Reviews />
+      </Layout>
+    </>
   )
 }
