@@ -2,6 +2,7 @@ import * as React from "react"
 import { useRef } from "react"
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from "gatsby"
 
 const navigation = [
   { name: 'Domov', href: '#', current: true },
@@ -19,11 +20,6 @@ function classNames(...classes) {
 
 
 export default function Example() {
-  const targetRef = useRef(null);
-
-  function handleClick() {
-    targetRef.current.scrollIntoView({ behavior: 'smooth' });
-  }
 
   return (
     <Disclosure as="nav" className="bg-gray-50">
@@ -44,16 +40,20 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="logoB.png"
-                    alt="Villiz Barbershop"
-                  />
+                  <Link to="/">
+                    <img
+                      className="block h-8 w-auto lg:hidden"
+                      src="logoB.png"
+                      alt="Villiz Barbershop"
+                    />
+                  </Link>
+                  <Link to="/">
                   <img
                     className="hidden h-8 w-auto lg:block"
                     src="logoB.png"
                     alt="Villiz Barbershop"
                   />
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -61,7 +61,6 @@ export default function Example() {
                       <a
                         key={item.name}
                         href={item.href}
-                        onClick={handleClick}
                         className={classNames(
                           item.current ? 'bg-myTeal text-white' : 'text-#024059 hover:bg-myTeal hover:bg-opacity-70 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'

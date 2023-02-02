@@ -8,11 +8,22 @@ import PriceList from "../components/PriceList/PriceList"
 import Reviews from "../components/Reviews/Reviews"
 import Layout from "../components/Layout"
 import SplashScreen from "../components/SplashScreen/SplashScreen"
+import { useState, useEffect, useRef } from "react"
 
 export default function Home() {
+const [loading, setLoading] = useState(true)
+
+useEffect(() => {
+  setTimeout(() => {
+    setLoading(false);
+  }, 4000);
+}) 
+
   return (
     <>
+    {loading && (
       <SplashScreen />
+    )}
       
       <Layout>
         <HeroSection />
