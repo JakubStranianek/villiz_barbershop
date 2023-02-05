@@ -8,7 +8,11 @@ import PriceList from "../components/PriceList/PriceList"
 import Reviews from "../components/Reviews/Reviews"
 import Layout from "../components/Layout"
 import SplashScreen from "../components/SplashScreen/SplashScreen"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
 
 export default function Home() {
 const [loading, setLoading] = useState(true)
@@ -20,12 +24,11 @@ useEffect(() => {
 }) 
 
   return (
-    <>
-    {loading && (
-      <SplashScreen />
-    )}
-      
-      <Layout>
+    
+    <Layout>
+        {loading && (
+          <SplashScreen />
+        )}
         <HeroSection />
         <AboutUs />
         <Gallery />
@@ -34,6 +37,5 @@ useEffect(() => {
         <PriceList />
         <Reviews />
       </Layout>
-    </>
   )
 }

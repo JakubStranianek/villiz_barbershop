@@ -1,5 +1,6 @@
 import * as React from "react"
 import {motion} from "framer-motion"
+import {Link} from "gatsby"
 
 export default function Example() {
 
@@ -24,22 +25,22 @@ export default function Example() {
               <motion.div className="rounded-md shadow"
                 whileHover={{scale: [1,1.1]}}
               >              
-                <a
-                  href="#"
+                <Link
+                  to="/#priceList"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#BFAEA8] px-8 py-3 text-base font-medium text-white hover:bg-[#BFAEA8] hover:bg-opacity-70 md:py-4 md:px-10 md:text-lg"
                 >
                   Pozri služby
-                </a>
+                </Link>
               </motion.div>
               <motion.div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3"
                 whileHover={{scale: [1,1.1]}}
               >
-                <a
-                  href="#"
+                <Link
+                  to="/#kontakt"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-[#BFAEA8] hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   Objednaj sa
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

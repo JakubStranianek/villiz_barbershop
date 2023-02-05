@@ -3,10 +3,15 @@ import Navbar from "./Navbar/Navbar"
 import Footer from "./Footer/Footer"
 import Contact from "./Contact/Contact"
 
-export default function Layout( {children} ) {
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
+export default function Layout( {children} ) {  
   return (
     <div>
-        <Navbar />
+        <Navbar/>
             {children}
             <Contact />
         <Footer />

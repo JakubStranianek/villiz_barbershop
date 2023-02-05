@@ -14,7 +14,12 @@ module.exports = {
       colors: {
         "myTeal": "#024059",
         "myCamel": "#BFAEA8",
+      },
+      backgroundImage: {
+        'myGallery1': "url('/gallery/gallery1.png')",
+        'error': "url('/error.jpg')"
       }
+      
     },
   },
   plugins: [

@@ -1,14 +1,14 @@
 import * as React from "react"
-
+import {Link} from "gatsby"
 const navigation = {
     main: [
-        { name: 'Domov', href: '#', current: true },
-        { name: 'O nás', href: '#', current: false },
-        { name: 'Cenník', href: '#', current: false },
-        { name: 'Recenzie', href: '#', current: false },
-        { name: 'Galéria', href: '#', current: false },
-        { name: 'Kariéra', href: '#', current: false },
-        { name: 'Kontakt', href: '#', current: false },
+      { name: 'Domov', href: '/', current: true },
+      { name: 'O nás', href: '/#about', current: false },
+      { name: 'Cenník', href: '/#priceList', current: false },
+      { name: 'Recenzie', href: '/#recenzie', current: false },
+      { name: 'Galéria', href: '/galeria', current: false },
+      { name: 'Kariéra', href: '/kariera', current: false },
+      { name: 'Kontakt', href: '/#kontakt', current: false },
     ],
     social: [
       {
@@ -55,10 +55,10 @@ const navigation = {
           </nav>
           <div className="mt-10 flex justify-center space-x-10">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+              <Link to={item.href} key={item.name} className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
-              </a>
+              </Link>
             ))}
           </div>
           <p className="mt-10 text-center text-xs leading-5 text-gray-500">
