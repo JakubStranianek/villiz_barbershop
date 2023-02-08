@@ -14,7 +14,7 @@ export default function Example() {
             <p className="text-base font-semibold text-black text-opacity-50">404</p>
             <h1 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Page not found.</h1>
             <p className="mt-2 text-lg font-medium text-black text-opacity-50">
-                 Sorry, we couldn’t find the page you’re looking for.
+                 Sorry, we couldn’t find the page you’re looking for
             </p>
             <div className="mt-6">
               <Link
