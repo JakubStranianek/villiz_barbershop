@@ -5,19 +5,19 @@ const people = [
     "source": '/gallery/img1.png'
   },
   {
-    "source": '/gallery/img2.png'
+    "source": '/gallery/img6.png'
   },
   {
     "source": '/gallery/img3.png'
   },
   {
-    "source": '/gallery/img4.png'
+    "source": '/gallery/img2.png'
   },
   {
     "source": '/gallery/img5.png'
   },
   {
-    "source": '/gallery/img6.png'
+    "source": '/gallery/img4.png'
   },
 ]
 
@@ -33,7 +33,7 @@ export default function Gallery2() {
           return (
           <div key={index + index.source} className="col-span-1 flex flex-col rounded-lg text-center shadow">
             <div className="flex flex-1 flex-col">           
-                <img className="w-full h-full grayscale hover:grayscale-0 rounded-lg" src={index.source} alt="1" />                               
+                <img className="w-full h-full rounded-lg" src={index.source} alt="1" />                               
             </div>         
           </div>
           )

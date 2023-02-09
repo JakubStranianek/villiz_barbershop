@@ -11,7 +11,7 @@ export default function Example() {
           <motion.div className="px-6 sm:px-8 lg:w-1/2 xl:pr-16"
             initial={{y: -100, opacity: 0}}
             animate={{y:0, opacity: 1}}
-            transition={{delay: 2.5, duration: 1}}
+            transition={{delay: 1, duration: 1}}
           >
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               <span className="block xl:inline">Staň sa najlepšiou verziou</span>{' '}
@@ -48,7 +48,7 @@ export default function Example() {
         <motion.div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
             initial={{x: -100, opacity: 0}}
             animate={{x:0, opacity: 1}}
-            transition={{delay: 2.5, duration: 1}}
+            transition={{delay: 1, duration: 1}}
         >
           <img
             className="absolute inset-0 h-full w-full object-cover"

@@ -4,7 +4,7 @@ import { useInView } from "framer-motion"
 import { useRef, useEffect } from "react"
 
 const features = [
-  { name: '💈 Junior', description: 'Strih nožničkami a strojčekom pre deti do 15 rokov', price: "15€" },
+  { name: '💈 Junior', description: 'Strih nožničkami a strojčekom pre deti do 10 rokov', price: "15€" },
   { name: '💈 Basic', description: 'Uprava brady', price: "15€" },
   { name: '💈 Standard', description: 'Pánsky strih nožničkami a strojčekom', price: "20€" },
   { name: '💈 Premium', description: 'Oholenie hlavy, úprava fúzov a brady', price: "28€" },
