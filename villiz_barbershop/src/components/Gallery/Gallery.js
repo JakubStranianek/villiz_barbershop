@@ -55,7 +55,7 @@ const files = [
         animate={animation}
         >
           {files.map((photo) => (
-            <div key={photo.id} className="group relative">
+            <div key={photo.id + photo.source} className="group relative">
               <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:aspect-none lg:h-80">
                 <img
                   src={photo.source}

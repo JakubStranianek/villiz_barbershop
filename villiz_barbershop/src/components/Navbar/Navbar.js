@@ -61,7 +61,6 @@ return (
                       <Link
                         to={item.href}
                         key={item.name}
-                        scrollreveal
                         className={classNames(
                         item.current ? 'bg-myTeal text-white' : 'text-[#024059] hover:bg-myTeal hover:bg-opacity-70 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'

@@ -55,10 +55,10 @@ const navigation = {
           </nav>
           <div className="mt-10 flex justify-center space-x-10">
             {navigation.social.map((item) => (
-              <Link to={item.href} key={item.name} className="text-gray-400 hover:text-gray-500">
+              <a href={item.href} key={item.name} className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
-              </Link>
+              </a>
             ))}
           </div>
           <p className="mt-10 text-center text-xs leading-5 text-gray-500">
