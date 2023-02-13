@@ -33,7 +33,7 @@ export default function Example() {
               O nás
             </p>
             <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
-            Novootvorený barbershop v mestskej časti Žilina Bôrik na ulici Alexandra Rudnaya 45. 
+            Varbershop nachádzajúci sa v mestskej časti Žilina Bôrik na ulici Alexandra Rudnaya 45. 
             Príď si oddýchnuť a zresetovať po náročnom dni do nášho holičstva Villiz Barbershop. Ponúkame ti kvalitný pánsky strih, úpravu brady a mnoho ďalšieho.
             </p>
           </motion.div>

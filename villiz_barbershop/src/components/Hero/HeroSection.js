@@ -18,7 +18,7 @@ export default function Example() {
               <span className="block text-[#BFAEA8] xl:inline">seba samého</span>
             </h1>
             <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-              Viac ako nový strih. Toto bude tvoj najlepší strih, pretože my vieme ako to urobiť lepšie. Zverte sa do 
+              Viac ako nový strih. Zverte sa do 
               rúk naším profesionálom, ktorý majú vášeň pre barbierstvo.
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
