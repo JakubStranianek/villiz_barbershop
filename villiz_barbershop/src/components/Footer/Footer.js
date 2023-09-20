@@ -61,7 +61,12 @@ const navigation = {
               </a>
             ))}
           </div>
+
           <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+            Built with ❤️ by <Link to="https://www.stranianek.dev" target="_blank">Jakub Stranianek</Link>
+          </p>
+
+          <p className="text-center text-xs leading-5 text-gray-500">
             &copy; 2020 Villiz Barbershop, Inc. All rights reserved.
           </p>
         </div>
